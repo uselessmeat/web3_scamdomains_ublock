@@ -30,7 +30,7 @@ def scamsniffer_to_ublock():
 
     with open(current_domains, 'w') as f:
         for domain in domains:
-            f.write(f'{domain.strip()}\n')
+            f.write(f'||{domain.strip()}^\n')
 
 
 if __name__ == '__main__':
